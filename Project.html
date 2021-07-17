@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!--The lang is to show users what language the website is in and what language they can edit it into. The language for this one is US English.-->
+<head>
+    <title> Project USA </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet"; href="Project.css"/>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> this is from font awesome icons --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--from google material icon-->
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> this is from bootstrap -->
+    <!--the last three links are for exporting icons from three different libraries-->
+</head>
+<div class="body">
+<body> 
+     <input type="checkbox" id="checkbox">
+     <label for="checkbox">
+        <i class="material-icons" id="menu">menu</i>
+        <i class="material-icons" id="cancel">close</i>
+     </label>
+    <div class="dashboard">
+        <!--<i class="fa fa-bars"></i>-->
+        <header>Dashboard</header>
+        <ul style="list-style: none;"> <!-- this is an unordered list and puts elements in a bullet point. The list-style was to remove bullet points-->
+           <li> <a href="#"> <i class="material-icons">search</i> Search</a> </li>
+           <li> <a href="#"> <i class="material-icons">home</i> Home</a> </li>
+           <li> <a href="#"> <i class="material-icons">today</i> Events </a> </li>
+           <li> <a href="#"> <i class="material-icons">mic</i> Recorded Events </a>  </li>
+           <li> <a href="#"> <i class="material-icons">accessibility</i> Services </a> </li>
+           <li> <a href="#"> <i class="material-icons">book</i> Book appointment</a> </li>
+           <li> <a href="Application form.html "> <i class="material-icons">person</i> User </a> </li>
+           <li> <a href="The about.html"> <i class="material-icons">info</i> Info</a> </li>
+           <li> <a href="#"> <i class="material-icons">call</i> Contact Us</a> </li>
+           <li> <a href="#"> <i class="material-icons">settings</i> Settings</a> </li>
+        </ul>
+    </div>
+
+
+    <div class="firstname">
+        <img id='lightlogo' src="learning bulb.gif" alt="our logo">  <!--alt is to describe the picture incase it doesn't load on time-->
+        <h1 id="h1"> Welcome to SENT </h1> 
+    <h2 id="h2"> A website where Nigerian students are enlightened on how to prepare themselves to study in the US.</h2> 
+    </div>
+
+    <div id="intro">
+        <p>I made this website during my preparations to apply to schools in the U.S. I must say it isn't roses for someone who has 
+            inadequate information. It can be very tasking from making your college list to accepting your admission letter.
+             I know not everyone has the luxury of consulting private organizations to help them so this website is here to guide
+              and help you all the way. Nigerian students who are already in the U.S will also assist you, all for free!
+        </p>
+    </div>
+
+    <!-- <div>
+       <p id="tabs"> 
+           <a id="tab1" href="https://www.collegevine.com/schools/hub/all/canvas"> Home</a> **this allowed my designed tab have a link to another web page**
+       </p>
+        <p id="tabs">
+            <a id="tab1" href="https://isl.unilag.edu.ng/">Services</a>
+        </p>
+        <p id="tabs">News</p>
+        <p id="tabs">
+            <a id="tab1" href="https://www.collegevine.com/questions">Community</a>
+            </p>
+        <p id="tabs">Counselors</p>
+        <p id="tabs"> Experiences</p>
+        <p id="tabs"> Appointments</p>
+        <p id="tabs">About</p>
+    </div> -->
+
+    <div class="bulbs">
+        <button  class="bulbs1" onclick="document.getElementById('bulb').src='pic_bulbon.gif'">I understand</button>
+        <img id='bulb' src="pic_bulboff.gif" style:width="300px"; height=300px;>
+        <button class="bulbs1" onclick="document.getElementById('bulb').src='pic_bulboff.gif'"> I don't get!</button>
+      </div>
+       <br><br>
+    <!--<script> window.alert('Do you want to continue?')</script>--> <!--used to ask every user a question that will make them continue to a page-->
+  
+    <div id="info">
+        <button id="infoButton" type="button" onclick="myFunction()">Click here for documents needed</button>
+
+        <p id="info1"></p>
+        <p id="info2"></p>
+        <p id="info3"></p>
+        <p id="info4"></p> 
+        
+        <script> function myFunction(){ 
+            document.getElementById('info1').innerHTML="Basic documents needed are:";
+            document.getElementById('info2').innerHTML="Secondary school transcript";
+            document.getElementById('info3').innerHTML="O'level result(WAEC/GCE/IGCSE)";
+            document.getElementById('info4').innerHTML="At least 3 letters of recommendation (from your school teachers and counselor)";} 
+        </script>
+    
+    </div>
+</div>
+      <br><br>
+    <hr> <!--this is used to add a horizontal rule-->
+    <div class="bottom">
+    <p title="be nice in your comments"> Glad you stopped by to view my website. Please comment on how this can be improved.</p> 
+    <!--the 'title' is supposed to give a pop-up when you scroll over the text-->
+    <a href="Sign Up.html"> Click here to register for free</a> 
+    <!--This is used to attach a link/document to something on your website--> <!--you have to write out the path of the file in order-->
+    </div>
+    <br/>
+    <br/>
+    <div id="image">
+    <img src="C:\Users\HP\Desktop\Project T\Snapchat-10774107.jpg" alt= "The CEO" width="150" height="300"> 
+    </div>
+    <!--alt gives a description of the image incase it doesn't load on time for the user-->
+    <!--the img src is used to attach pictures. just go to the image and right click then copy image address and paste here. For google sha-->
+    <!--for images in your file explorer, add your html document and the image in a folder then write out the exact memory path your computer gives you-->
+
+<p id="demo"></p>
+
+    <pre id="blessings">Today is the day the LORD has made
+        I will rejoice and be glad in it
+        Oh this is the day!
+    </pre> <!--makes texts exactly as they appear here-->
+     
+    <div id='BulbDesign'>
+    <img src="bulb design.gif" alt='just a bulb design'>
+     </div>
+
+    <!--how to make that surprise button stay on the right
+    how to do that on and off bulb-->
+    <!--comment in line 33-->
+</body>
+
+<footer id="copyright">
+    <p> This is Tosin's website. &copy; All copyright reserved.</p>
+</footer>
+
+</html>

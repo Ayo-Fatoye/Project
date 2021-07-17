@@ -1,0 +1,156 @@
+
+.firstname {color:saddlebrown; text-align: center;}
+
+.body {background-image: url();
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+ 
+
+/*by default background images repeat vertically and horizonatally; If you want it to repeat just vertically or horizontally then use background-repeat:y/x */ 
+/*'no-repeat' is if you want the image in one piece and 'cover' is if you want it to cover the entire page*/
+/*background-attachment is if you want the background to stay with the rest of the page or scroll along with other elements in the page*/
+/*you can use shorthand and write everything like: 'background: color image repeat attachment position' in this order*/
+
+#lightlogo{width: 200px; 
+    margin-bottom: 0px;
+height: 200px;}
+
+#h1 {font-size: 140px; 
+    margin-bottom: 0px; 
+    margin-top: 10px;} /*margin-bottom is used to remove the default space below a text*/
+
+#h2 {margin-top: 0px; 
+    margin-bottom: 50px;} /*margin-top is used to remove the default space above a text*/
+
+#intro{ border-style: hidden; 
+    margin-top:30px; 
+    margin-left:255px; 
+    margin-right:100px; 
+    font-size:20px; 
+    color: black; 
+    font-family:'Times New Roman', Times, serif;}
+
+/*#link {color: black;}; don't know why this is here.*/
+
+/*#tabs {color: black; 
+    font-size: 25px;  
+    background-color:dimgrey;}
+#tabs {border-style:outset; 
+    border-radius:100px;}
+#tabs {margin-bottom:15px; 
+    margin-left:75px; 
+    margin-right:1200px;} *display: inline* this is used to put your element in a straight line ;
+*margin left and right is to align the entire border to a certain direction* 
+**margin bottom and top gives space between each tab*
+#tabs {padding-top: 10px;
+     padding-bottom: 10px; 
+     padding-left: 50px;}
+*padding places in the texts in a tab in any position you want*
+
+#tab1{ color:black; 
+    text-decoration: none;} *'text-decoration none' is to remove the underline from hyperlink*
+.tab1 {margin-top: 100px;}*/
+
+.dashboard{
+    text-decoration:none;
+    width:250px;
+    height: 100%;
+    background-color: rgba(20, 20, 37, 0.8);
+    position: fixed; /*allows this element stay put while others can stay on the same line with it*/
+    left: -250px; /*for the menu bar to go inside*/
+    margin:0;
+    padding:0;
+    transition: all 1s; /*time to show the entire dashboard coming out*/
+}
+
+.dashboard header{
+     text-align: center;
+     font-size: 25px;
+     color: seashell;
+     line-height: 80px;
+     background-color: rgb(29, 29, 42);
+     user-select: none; /*this makes texts unselectable*/
+} /*this calls the header part of this class*/
+
+.dashboard ul a{
+    display: block; /*allows decoration work for the entire line*/
+    height: 100%;
+    width: 100%; /*this width and height allows elements work with this entire limited space*/
+    line-height: 65px;
+    font-size: 20px;
+    color: seashell;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(205, 205, 208, 0.1);
+    border-bottom: 1px solid black;
+    text-decoration:none;
+    transition: 0.4s; 
+} /*this calls the ul part of this class*/
+
+ul li:hover a{
+    padding-left: 30px; /*this is for the dancing stuff on my list and the padding is for hoe far inside my text dances*/
+}
+
+#checkbox{
+    display:none;
+}
+
+label #menu, label #cancel{    /*this combines design for the menu and cancel symbol*/
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(13, 13, 15, 0.1);
+    border-radius: 3px;
+}
+label #menu{
+    left:40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 12px;
+    background-color: rgba(51, 51, 71, 0.5);
+    transition: all 0.5s; /*time before the sign disappears*/
+}
+
+label #cancel{
+    z-index: 1111; /*this keeps the cancel bar in place even when other html elements come to play*/
+    left: -195px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    background-color: rgba(205, 205, 208, 0.1);
+    padding:4px 9px;
+    transition: all 1s; /*time for when the cancel sign should come up. I made it together with the dashboard (1s) so that they arrive together*/
+    position: fixed; /*this keeps the cancel button in its place even when you're scrolling*/
+}
+
+#checkbox:checked ~ .dashboard{ /*this is calling out the entire dashboard*/
+    left:0; /*this brings the dashboard from -250px(inside the page) to 0px (outside) when checked*/
+}
+
+#checkbox:checked ~ label #menu{
+    left:100px;
+    opacity:0; /*this is for the fading of the menu bar when transitioning away*/
+    pointer-events:visibleFill;
+}
+
+#checkbox:checked ~ label #cancel{
+    left:195px;
+}
+
+.bulbs{margin-left: 950px;}
+.bulbs1{height:40px; width:150px; border-radius: 50px; background-color: black; color: whitesmoke; font-size: 20px;}
+
+#info{text-align: right; color: darkgray; height:200px}
+#infoButton{height:100px; width:200px; font-family:fantasy; font-size: 25px; background-color: ;}
+
+.bottom {color: lightcoral;}
+
+#image {text-align: center;}  /*you can use text align for an image under div*/
+
+#blessings{color: darkgray; font-size: 25px;}
+
+#BulbDesign{text-align: right; width:200; height: 200;}
+
+#copyright {color:black; padding-top: 10px; padding-bottom: 10px; border-style: outset; background-color:rgba(52, 52, 81, 0.5); text-align: center;}

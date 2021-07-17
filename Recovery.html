@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Recovery page</title>
+    <link rel="stylesheet"; href="Recovery.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body id="entire">
+    <div class="body">
+        <form>
+            <!--form makes your stuff in like a box-->
+            <h1 id="h1"> Forgot Password</h1>
+            <ul style="list-style: none;">
+                <!-- this is an unordered list and puts elements in a bullet point. The list-style was to remove bullet points-->
+                <li> <i class="material-icons">person</i> <input id='input' type="email" placeholder='Enter  E-mail'
+                        minlength="5" required> </li>
+            </ul>
+            <button id="button"> Reset Password </button>
+            <br><br>
+            <p id="paragraph"> Don't have an account? <a id="link" href="Sign Up.html">Sign Up</a>. </p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function (event){ 
+            event.preventDefault(); 
+            var input = document.getElementById('input');
+            var email = input.value;
+            console.log('email', email);
+
+            localStorage.setItem("email", email);
+        }); 
+
+        if( localStorage.getItem("email") == null){
+                console.log("NO EMAIL FOUND")
+            }else{
+                console.log("EMAIL FOUND")
+            }
+
+    </script>
+      
+      <!--getElementById is supposed to call out a particular element by it's id then the command after is using a 
+          function from Javascript -->
+          <!--localStorage and te command after is to fetch something from your web's local storage-->
+          <!--The "preventDefault" is to stop the page from refreshing when you press a button (it does this by default)-->
+          <!--the "==null" is to say if item isn't found then it's null-->
+        </body>      
+</html>

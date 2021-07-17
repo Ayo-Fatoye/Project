@@ -1,0 +1,26 @@
+#body{background-image: url(Login);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.entire{text-align:center; width:320px; height:650px; background-color: rgba(39, 39, 64, 0.5)}
+.entire{margin-top: 80px; margin-left: 600px; margin-right: 800px;} /*this is to position the entire dialog box*/
+
+#logo{ padding-top:20px; width:100px; height: 100px; text-align:center; border-radius: 50%; ;}
+
+#h1{color: white;}
+
+.login{border-style: outset;
+     border-radius: 20px;
+ background-color:;
+ font-family: Georgia, 'Times New Roman', Times, serif; 
+ font-size: 20px; 
+ text-decoration: none;
+ height:40px;
+ width:100px;
+}
+
+
+ .account{color: white; }
+
+ #placeholder{height: 40px; width: 200px; border-radius: 50px; text-align: center;}

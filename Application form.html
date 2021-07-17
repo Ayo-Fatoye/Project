@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>Application form</title>
+         <link rel="stylesheet"; href="Application form.css"/>
+        </head>
+    <body id="body">
+     <div class='entire' id="entire">
+        <img id="logo" src="Company logo.jpg"/>
+       <h1 id="h1"> Login here</h1>
+       <form>
+           <div id="h1">
+           <p id="uname">Username</p>
+           <input id="placeholder" type="text" name="" placeholder="Enter Username"/>
+           <p id="psw">Password</p>
+           <input id= "placeholder" type="password" password="" placeholder="Enter Password"/>
+           <br><br> 
+           <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <br> <br>
+             <button id="button" href="Project.html" class="login" type="submit"> Login</button>
+           <br><br>
+           <a class="account" href="Recovery.html">Lost your password?</a>
+           <br>
+           <a class="account" href="Sign Up.html"> Don't have an account?</a>
+           </div>
+       </form>
+     </div>
+
+     <script>
+      document.getElementById("button").addEventListener("click", function (event){ 
+          event.preventDefault();
+        });  
+
+        var username = document.getElementById(‘uname’).value;
+        var password = document.getElementById(‘psw’).value;
+        sessionStorage.setItem(“currentloggedin”,username);
+
+        localStorage.setItem('all_users',JSON.stringify(a));
+    </script>
+    <!--this preventDefault is supposed to stop the default where buttons refresh when clicked on-->
+
+    </body>
+  
+</html>

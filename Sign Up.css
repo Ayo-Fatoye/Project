@@ -1,0 +1,31 @@
+
+.body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;}
+   /*this is for all the inputs to be deeper in color when selected*/
+
+   input{
+       width: 450px;
+   }
+
+#profile{
+    height: 100px;
+    width: 450px;
+}
+
+#rememberbtn{
+    width: 20px;
+}
+
+button:hover {
+    opacity:1;
+  } 
+  /*the submit button will be deeper in color when the mouse is on it*/
